@@ -1,0 +1,272 @@
+@media screen and (max-width: 800px) {
+    @mixin common-css {
+        button {
+            font-size: 14px;
+        }
+
+        .naics,
+        .form label {
+            font-size: 16px !important;
+            line-height: 22px !important;
+            font-size: 16px;
+        }
+        .double-row--mobile{
+            column-count: 1 !important;
+        }
+
+        .form input,
+        .form select {
+            min-height: 25px;
+        }
+
+        .more-info-btn {
+            width: 160px;
+        }
+
+        .show-mobile {
+            display: block;
+            opacity: 1;
+        }
+
+        .hide-mobile {
+            display: none;
+        }
+
+        .logo {
+            padding: 24px 16px;
+        }
+
+        .compatibility-white-card {
+            width: calc(100% - 16px);
+        }
+
+        .row {
+            flex-direction: column;
+
+            .col--full-width {
+                width: calc(100% - 32px);
+            }
+        }
+
+        .max-text-width {
+            width: 100%;
+        }
+
+        .footer {
+            display: none;
+
+            &--mobile {
+                display: flex;
+                position: fixed !important;
+                bottom: 0;
+            }
+        }
+
+        .form {
+            .half-input {
+                width: 100%;
+            }
+        }
+
+        .body-section {
+            flex-direction: column;
+        }
+
+        .main-content {
+            justify-content: flex-start;
+            flex-direction: column;
+            height: auto;
+
+            .typewriter.show-mobile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .typewriter a {
+                float: right;
+                margin: 0 32px 0 16px;
+            }
+
+            .menu-holder {
+                max-height: 100vh;
+                margin-bottom: 10%;
+                // min-height: calc(100vh - 14vh);
+
+                .menu {
+                    max-height: 47px;
+
+                    .title {
+                        font-size: 26px;
+                        padding: 8px;
+                        font-weight: 200;
+                        letter-spacing: 1px;
+                    }
+
+                    &.active {
+                        // max-height: 47px;
+                    }
+                }
+
+            }
+
+            .content {
+                position: static;
+                width: 100%;
+                padding: 16px 0;
+                flex-wrap: wrap;
+                display: block;
+                height: auto;
+
+                &.animate__fadeInRight {
+                    &+.footer {
+                        position: static !important;
+                    }
+
+                    .sub-page {
+                        // display: flex !important;
+                    }
+                }
+
+                .content-container {
+                    font-size: 19px;
+                    line-height: 21px;
+
+                    h1 {
+                        left: 0;
+                        transform: none;
+                        margin-top: 16px;
+                    }
+
+                    h2 {
+                        margin-bottom: 16px;
+                        opacity: 1;
+                        padding-left: 46px;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+
+                    .column {
+                        max-height: none;
+                        padding-top: 0;
+                        margin-top: 8px;
+                    }
+
+                    .compatibility-white-card {
+                        width: calc(100% - 32px) !important;
+                        margin: 16px;
+                    }
+
+                    ul {
+                        font-size: 16px;
+                    }
+
+                    li {
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+
+
+            #portfolio-title {
+                &.active {
+                    max-height: 400px;
+                }
+
+                .portfolio-menu-icons {
+                    padding: 4px 20% 4px 20%;
+                    width: fit-content;
+
+                    .portfolio-icon {
+                        min-width: 80px;
+                        margin: 16px;
+                        padding: 16px 0;
+                        background-size: 80%;
+                    }
+                }
+
+                .sub-menu {
+                    width: 100%;
+                    overflow: auto;
+
+                    .menu-content {
+                        padding-right: 32px;
+                    }
+                }
+            }
+
+            .content-col {
+                width: calc(100% - 32px) !important;
+
+                .content-img {
+                    background-color: #fff;
+                    width: 100%;
+                    background-size: 20%;
+                    height: 100px;
+                }
+            }
+
+            // #sub-page-m1-1:not(.hide-page) {
+            //     // show all subpages for About
+            // }
+
+            // #sub-page-m1-1:not(.hide-page)~#sub-page-m1-2 {
+            //     display: flex !important;
+            // }
+
+            // #sub-page-m1-1:not(.hide-page)~#sub-page-m1-3 {
+            //     display: flex !important;
+            // }
+
+            // #sub-page-m1-1:not(.hide-page)~#sub-page-m1-4 {
+            //     display: flex !important;
+            // }
+
+
+
+            .footer {
+                padding: 16px;
+                min-height: 50px;
+                position: static;
+            }
+        }
+
+        .img-strip-full {
+            width: 100% !important;
+            left: 0 !important;
+        }
+
+        .portfolio-content-container {
+            width: calc(100% - 64px);
+            left: 0;
+            max-width: none;
+            margin: 16px;
+            color: #000;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 14;
+
+            .portfolio-message {
+                font-size: 16px;
+            }
+
+            .portfolio-action {
+                font-size: 14px;
+                min-width: 160px;
+            }
+        }
+
+        .portfolio-close {
+            top: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
+    .dark,
+    .light {
+        @include common-css();
+    }
+}

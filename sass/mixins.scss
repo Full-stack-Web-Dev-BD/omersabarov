@@ -1,0 +1,47 @@
+@mixin body {
+    font-size: 18px;
+    font-family: "Abel";
+}
+@mixin main-title {
+    font-size: 24px;
+    font-family: "Abel";
+}
+@mixin sub-title {
+    font-size: 20px;
+    font-family: "Abel";
+}
+@mixin content-title {
+    
+    font-family: "Abel";
+}
+@mixin menu-font {
+    font-size: 18px;
+    font-family: "Abel";
+}
+@mixin menu-submenu {
+    font-size: 16px;
+    font-family: "Abel";
+}
+@mixin make-element {
+    content: "";
+    display: block;
+}
+
+@mixin noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin active-menu {
+    background-color: rgba(255, 255, 255, 1);
+    color: $primary;
+}
